@@ -1,0 +1,28 @@
+.home-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .news-card {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  // .fecha {
+  //   font-size: 0.9rem;
+  //   color: gray;
+  // }
+  
