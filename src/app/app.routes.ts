@@ -4,7 +4,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { NoticiaDetalleComponent } from './noticia-detalle/noticia-detalle.component';
 
 export const routes: Routes = [
-  { path: '', component: LoginComponent }, // Página por defecto
+  { path: '', component: LoginComponent }, 
   { path: 'home', component: HomeComponent },
   { path: 'noticia/:id', component: NoticiaDetalleComponent },
 ];

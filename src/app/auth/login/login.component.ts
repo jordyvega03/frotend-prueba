@@ -43,7 +43,6 @@ export class LoginComponent {
           console.log("✅ Token recibido:", response.token);
           let token = response.token;
           localStorage.setItem('token', token);
-          console.log("Token Guardado:" + token);
           this.router.navigate(['/home']);
         }
       });

@@ -15,7 +15,6 @@ export class AuthService {
   }
   
   isAuthenticated(): boolean {
-    // Asegurar que `window` existe antes de acceder a `localStorage`
     if (typeof window !== 'undefined') {
       return !!localStorage.getItem('token');
     }

@@ -8,7 +8,6 @@ export class AuthGuard implements CanActivate {
   constructor(private router: Router) {}
 
   canActivate(): boolean {
-    // Verificar si estamos en un entorno donde window está disponible
     if (typeof window !== 'undefined') {
       const token = localStorage.getItem('token');
       if (!token) {
@@ -18,6 +17,6 @@ export class AuthGuard implements CanActivate {
       return true;
     }
     
-    return false; // Si no hay `window`, no puede continuar
+    return false;
   }
 }
